@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c35">
+  <meta name="description" content="خليل كير للعناية بالبشرة والشعر في بولاق الدكرور، الجيزة. تعرف على الخدمات وتواصل للحجز.">
+  <title>خليل كير | بشرة وشعر دايمًا بخير</title>
+  <style>
+    :root{--green:#173c35;--green2:#28564b;--cream:#f7f3eb;--gold:#c8a96b;--ink:#1c2925;--muted:#66736d;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:rgba(247,243,235,.96);border-bottom:1px solid #e7dfd1;position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}.brand{display:flex;align-items:center;gap:10px;color:var(--green);font-weight:800;font-size:1.2rem}
+    .mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:1.25rem;color:var(--gold);background:var(--green)}
+    .navlinks{display:flex;gap:22px;font-size:.93rem;color:#354b43}.navlinks a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 23px;background:var(--gold);color:#1d3029;font-weight:700;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(.97)}.btn.dark{background:var(--green);color:#fff}.btn.outline{background:transparent;border:1px solid #d9c89f;color:var(--green)}
+    .hero{background:radial-gradient(ellipse at 15% 15%,#39685a 0%,transparent 42%),linear-gradient(130deg,#102f2a,#1d493e);color:white;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;min-height:540px;padding:66px 0}
+    .eyebrow{color:#e1c78f;font-size:.9rem;font-weight:700;letter-spacing:.03em}.hero h1{font-size:clamp(2.4rem,5vw,4.5rem);line-height:1.22;margin:12px 0 20px}.hero h1 span{color:#e2c98e}.hero p{font-size:1.08rem;color:#e4ece7;max-width:590px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-art{min-height:340px;display:grid;place-items:center;position:relative}.orb{width:min(340px,75vw);aspect-ratio:1;border:1px solid rgba(225,199,143,.65);border-radius:50%;display:grid;place-items:center;position:relative;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.01));box-shadow:0 0 0 18px rgba(255,255,255,.025),0 0 0 42px rgba(255,255,255,.018)}
+    .orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(225,199,143,.28);border-radius:50%;inset:24px}.orb:after{inset:50px}.orb-text{text-align:center;z-index:1}.orb-text strong{display:block;font-family:Georgia,serif;font-size:3rem;letter-spacing:.08em;color:#e2c98e}.orb-text span{font-size:1rem;letter-spacing:.12em}
+    section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head .eyebrow{color:#997b42}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);color:var(--green);line-height:1.35;margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:25px;border:1px solid #e5ddcf;background:#fffdf9;border-radius:18px;min-height:190px;box-shadow:0 8px 24px #233c2b08}.service .num{color:var(--gold);font-family:Georgia,serif;font-size:1.5rem}.service h3{margin:8px 0;color:var(--green);font-size:1.12rem}.service p{margin:0;color:var(--muted);font-size:.95rem}
+    .about{background:#eee7d9}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}.about-card{background:var(--green);color:white;padding:34px;border-radius:22px;min-height:250px;display:flex;flex-direction:column;justify-content:center}.about-card strong{font-size:2rem;color:#e2c98e;line-height:1.3}.about-card span{margin-top:10px;color:#e2eae5}.about-copy h2{font-size:2rem;color:var(--green);margin:0 0 12px}.about-copy p{color:#526159}.pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.pill{border:1px solid #d9caa9;border-radius:99px;padding:6px 12px;color:var(--green);font-size:.86rem;background:#f9f5ed}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{text-align:center;padding:20px}.step-icon{width:54px;height:54px;border-radius:50%;background:#e9dfc8;color:var(--green);display:grid;place-items:center;font-size:1.25rem;margin:0 auto 12px}.step h3{margin:0;color:var(--green)}.step p{color:var(--muted);margin:6px 0}
+    .cta{padding:54px 0;background:var(--green);color:white;text-align:center}.cta h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:0 0 8px}.cta p{color:#dbe6df;margin:0 0 22px}
+    footer{background:#102c27;color:#d8e0da;padding:25px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-brand{font-weight:800;color:#e2c98e}.small{font-size:.86rem;color:#b8c8bf}
+    .notice{font-size:.83rem;color:#bdcfc4;margin-top:12px}
+    @media(max-width:800px){.navlinks{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-grid{padding:52px 0 38px;gap:20px}.hero-art{min-height:260px}.orb{width:250px}.services{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.about-grid{gap:22px}section{padding:58px 0}}
+    @media(max-width:520px){.services{grid-template-columns:1fr}.nav .btn{padding:9px 14px;font-size:.88rem}.hero h1{font-size:2.5rem}.hero p{font-size:1rem}.hero-grid{min-height:auto}.orb{width:220px}.footer-row{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="خليل كير - الرئيسية"><span class="mark">K</span><span>خليل كير <small style="display:block;font-size:.66rem;font-weight:400;letter-spacing:.12em">KHALIL CARE</small></span></a>
+    <nav class="navlinks" aria-label="القائمة الرئيسية">
+      <a href="#services">الخدمات</a><a href="#about">عن خليل كير</a><a href="#booking">الحجز</a><a href="#location">العنوان</a>
+    </nav>
+    <a class="btn dark" href="#booking">احجز الآن</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">عناية متخصصة بالبشرة والشعر</div>
+        <h1>خليل كير،<br><span>بشرة وشعر</span><br>دايمًا بخير</h1>
+        <p>مساحتك للاهتمام ببشرتك وشعرك بخطوات عناية مناسبة لاحتياجاتك، واهتمام بالتفاصيل من أول استشارة لحد اختيار روتينك.</p>
+        <div class="actions"><a class="btn" href="#booking">اطلب ميعادك</a><a class="btn outline" href="#services" style="color:#fff;border-color:#8ca79a">اكتشف الخدمات</a></div>
+      </div>
+      <div class="hero-art" aria-label="هوية خليل كير"><div class="orb"><div class="orb-text"><strong>KC</strong><span>KHALIL CARE</span><div style="font-size:.83rem;color:#e2c98e;margin-top:8px">SKIN & HAIR CARE</div></div></div></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">خدماتنا</div><h2>عناية على قد احتياجك</h2><p>اختار الخدمة، وخلينا نساعدك تتعرف على خطوات العناية المناسبة لك.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><h3>تنظيف البشرة</h3><p>جلسات تنظيف واهتمام بنظافة البشرة ومظهرها.</p></article>
+        <article class="service"><div class="num">02</div><h3>هايدرافيشيال</h3><p>جلسة عناية وتنظيف وترطيب لتحسين مظهر البشرة.</p></article>
+        <article class="service"><div class="num">03</div><h3>جلسات النضارة</h3><p>خطوات عناية تهتم بمظهر البشرة وإشراقتها.</p></article>
+        <article class="service"><div class="num">04</div><h3>العناية بالبشرة المعرضة للحبوب</h3><p>تقييم احتياجات البشرة والمساعدة في اختيار روتين عناية مناسب.</p></article>
+        <article class="service"><div class="num">05</div><h3>العناية بالتصبغات وآثار الحبوب</h3><p>توجيه لاختيار خطوات عناية مناسبة حسب حالة البشرة.</p></article>
+        <article class="service"><div class="num">06</div><h3>العناية بالشعر وفروة الرأس</h3><p>اهتمام باحتياجات الشعر وفروة الرأس واختيار روتين مناسب.</p></article>
+      </div>
+      <p class="notice" style="text-align:center;color:#78847d">الخدمات التجميلية المتاحة تُحدد بعد معرفة الحالة وملاءمة الخدمة. لا يُعد الموقع بديلاً عن استشارة الطبيب عند وجود مشكلة طبية.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-card"><strong>اهتمام بالتفاصيل.<br>ثقة في كل خطوة.</strong><span>خليل كير — مساحة للعناية بالبشرة والشعر</span></div>
+      <div class="about-copy"><div class="eyebrow">عن خليل كير</div><h2>العناية الصح تبدأ بالفهم</h2><p>في خليل كير، بنهتم نفهم احتياجات بشرتك وشعرك الأول، وبعدها نساعدك تختار خطوات العناية والمنتجات المناسبة ليك، من غير وعود مبالغ فيها أو حلول واحدة تناسب كل الناس.</p><p>هدفنا تجربة بسيطة وواضحة، واهتمام مهني يحترم اختلاف كل بشرة وكل نوع شعر.</p><div class="pill-row"><span class="pill">عناية بالبشرة</span><span class="pill">عناية بالشعر</span><span class="pill">روتين مناسب لاحتياجك</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">خطوات بسيطة</div><h2>إزاي تحجز؟</h2><p>ثلاث خطوات تفصلك عن ميعادك في خليل كير.</p></div>
+      <div class="steps">
+        <div class="step"><div class="step-icon">١</div><h3>تواصل معانا</h3><p>ابعتلنا رسالة وحدد الخدمة اللي مهتم بيها.</p></div>
+        <div class="step"><div class="step-icon">٢</div><h3>حدد الميعاد</h3><p>هنساعدك تختار ميعاد مناسب حسب المتاح.</p></div>
+        <div class="step"><div class="step-icon">٣</div><h3>زور خليل كير</h3><p>مستنيينك في بولاق الدكرور، الجيزة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="booking">
+    <div class="wrap"><h2>جاهز تهتم ببشرتك وشعرك؟</h2><p>ابعتلنا على واتساب للاستفسار والحجز ومعرفة عروض الافتتاح.</p>
+      <!-- Replace the placeholder number in the WhatsApp link with the business number, including Egypt country code 20 and without + or spaces. -->
+      <a class="btn" href="https://wa.me/201508505091?text=%D8%A3%D9%87%D9%84%D8%A7%20%D8%AE%D9%84%D9%8A%D9%84%20%D9%83%D9%8A%D8%B1%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AD%D8%AC%D8%B2." target="_blank" rel="noopener">تواصل على واتساب</a>
+      <div class="notice">للحجز والاستفسار، تواصل معانا مباشرة على واتساب.</div>
+    </div>
+  </section>
+
+  <section id="location" style="padding:38px 0">
+    <div class="wrap" style="text-align:center"><div class="eyebrow">موقعنا</div><h2 style="color:var(--green);margin:6px 0">زور خليل كير</h2><p style="color:var(--muted);margin:0">الجيزة، بولاق الدكرور، سكة المدرسة النجوم</p><p style="color:var(--muted);font-size:.9rem">يفضل التواصل قبل الزيارة لتأكيد الميعاد.</p></div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><div><div class="footer-brand">خليل كير | KHALIL CARE</div><div class="small">بشرة وشعر دايمًا بخير</div></div><div class="small">الجيزة · بولاق الدكرور</div><div class="small">© <span id="year">2026</span> Khalil Care</div></div></footer>
+</body>
+</html>
